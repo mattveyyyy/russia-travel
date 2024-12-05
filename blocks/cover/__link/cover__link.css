@@ -1,0 +1,30 @@
+.cover__link {
+  position: absolute;
+  max-width: inherit;
+  width: 100%;
+  min-height: 740px;
+  z-index: 5;
+}
+
+.cover__link:hover ~ .cover__overlay {
+  opacity: .8;
+}
+
+@media screen and (max-width: 1190px) {
+  .cover__link {
+    max-width: 100%;
+    min-height: 640px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .cover__link {
+    min-height: 480px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .cover__link {
+    min-height: 200px;
+  }
+}
